@@ -65,11 +65,7 @@ body {
 .contacts-mail:focus,
 .contacts-tel:hover,
 .contacts-tel:focus,
-.current,
-.address .contacts-mail:hover,
-.address .contacts-mail:focus,
-.address .contacts-tel:hover,
-.address .contacts-tel:focus { 
+.current { 
     color: var(--accent-color);
 }
 
@@ -172,6 +168,13 @@ body {
 .address .contacts-mail,
 .address .contacts-tel {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.address .contacts-mail:hover,
+.address .contacts-mail:focus,
+.address .contacts-tel:hover,
+.address .contacts-tel:focus {
+    color: var(--accent-color);
 }
 
 

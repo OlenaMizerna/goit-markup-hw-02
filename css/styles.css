@@ -6,6 +6,7 @@
     --accent-color: #2196F3;
     --logo-color: #000000;
     --team-color: #F5F4FA;
+    --secondary-color: #F5F5F5;
    
 }
 
@@ -36,11 +37,15 @@ body {
     color: var(--accent-color);
 }
 
-/* .logo-link:hover {} */
-/* .logo-link:focus {} */
-
 .logo-studio {
     color: var(--logo-color)
+}
+
+.logo-link:hover,
+.logo-link:focus,
+.logo-studio:hover,
+.logo-studio:focus {
+    color: var(--accent-color);
 }
 
 .nav-list,
@@ -59,7 +64,10 @@ body {
 .nav-list:hover,
 .nav-list:focus,
 .contacts-mail:hover,
-.contacts-mail:focus {
+.contacts-mail:focus,
+.contacts-tel:hover,
+.contacts-tel:focus,
+.current {
     color: var(--accent-color);
 }
 
@@ -74,8 +82,8 @@ body {
     background-color: var(--hero-footer-color);
 }
 
-.hero button {
-    font-family: 'Roboto', sans-serif;
+.hero .button {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1,88;
@@ -83,10 +91,16 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    
     color: var(--primary-color);
     background-color: var(--accent-color);
+    border: none;
 } 
+
+.hero .button:hover,
+.hero .button:focus {
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+}
 
 .features {
     font-weight: 400;
@@ -109,26 +123,20 @@ body {
 }
 
 .activity {
+    background-color: var(--primary-color);
+}
+.activity-title,
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1,1667;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    background-color: var(--primary-color);
 }
 
 .team {
     background-color: var(--team-color);
-}
-
-.team-title { 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1,1667;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
 }
 
 .team-member {
@@ -154,6 +162,10 @@ body {
     color: var(--primary-color);
 }
 
+.footer .logo-studio:hover {
+    color: var(--accent-color);
+}
+
 .address {
     font-style: normal;
     font-weight: 400;
@@ -165,4 +177,55 @@ body {
 
 .address-contacts {
     color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* styles for portfolio.html */
+
+/* .portfolio {
+    background-color: var(--secondary-color);
+} */
+
+.portfolio-title {
+    visibility: hidden;
+}
+
+.portfolio .button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--team-color);
+    /* border-color: var(--team-color); */
+    border: none;
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+}
+
+.project {
+    background-color: var(--primary-color);
+    border: 1px solid #EEEEEE;
+}
+
+.project h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+
+.project p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
 }

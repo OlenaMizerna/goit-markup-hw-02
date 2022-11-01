@@ -30,7 +30,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,1923;
+    line-height: 1.1923;
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
@@ -50,7 +50,7 @@ body {
 .contacts {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,1429;
+    line-height: 1.1429;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
@@ -70,21 +70,24 @@ body {
 }
 
 .hero {
+    background-color: var(--hero-footer-color);
+}
+ 
+.hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1,36;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-color);
-    background-color: var(--hero-footer-color);
 }
 
 .hero .button {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1,88;
+    line-height: 1.88;
     display: flex;
     align-items: center;
     text-align: center;
@@ -101,28 +104,30 @@ body {
     background-color: var(--primary-color);
 }
 
-.features {
-    font-size: 14px;
-    line-height: 1,71;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
-}
-.features h2 {
+.features-title {
     visibility: hidden;
 }
 
-.features h3  {
+.feature {
+    font-size: 14px;
     font-weight: 700;
-    line-height: 1,14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
 
+.feature-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
 .activity-title,
 .team-title {
-    font-weight: 700;
     font-size: 36px;
-    line-height: 1,1667;
+    line-height: 1.1667;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -134,13 +139,13 @@ body {
 .team-member {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,1875;
+    line-height: 1.1875;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
-.team-member p {
-    font-weight: 400;
+.team-member-text {
+    text-align: center;
     color: var(--secondary-text-color);
 }
 
@@ -158,9 +163,8 @@ body {
 
 .address {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--primary-color);
 }
@@ -192,7 +196,7 @@ body {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,62;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
@@ -211,17 +215,16 @@ body {
     border: 1px solid #EEEEEE;
 }
 
-.project h2 {
-    font-weight: 700;
+.project-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color); 
 }
 
-.project p {
+.project-text {
     font-size: 16px;
-    line-height: 1,88;
+    line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
